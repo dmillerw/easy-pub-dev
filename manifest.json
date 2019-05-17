@@ -1,0 +1,13 @@
+{
+  "name": "Easy Pub.Dev",
+  "version": "1.0",
+  "description": "Puts an easily copyable version designation for any package on pub.dev on the main page, for those who can't be bothered to take the extra click",
+  "content_scripts": [
+    {
+      "matches": ["http://*.pub.dev/*", "https://*.pub.dev/*"],
+      "run_at": "document_idle",
+      "js": ["script.js"]
+    }
+  ],
+  "manifest_version": 2
+}
