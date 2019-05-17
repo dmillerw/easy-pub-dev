@@ -1,0 +1,4 @@
+#!/bin/sh
+
+mkdir build/
+zip build/easy-pub-dev.zip manifest.json script.js

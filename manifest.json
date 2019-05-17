@@ -1,12 +1,13 @@
 {
   "name": "Easy Pub.Dev",
   "version": "1.0",
-  "description": "Puts an easily copyable version designation for any package on pub.dev on the main page, for those who can't be bothered to take the extra click",
+  "description": "Adds a button on any package page to copy a YAML formatted version string to the clipboard",
   "content_scripts": [
     {
-      "matches": ["http://*.pub.dev/*", "https://*.pub.dev/*"],
+      "matches": ["http://*.pub.dev/packages/*", "https://*.pub.dev/packages/*"],
       "run_at": "document_idle",
-      "js": ["script.js"]
+      "js": ["script.js"],
+      "css": ["style.css"]
     }
   ],
   "manifest_version": 2
